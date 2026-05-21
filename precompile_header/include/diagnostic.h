@@ -4,6 +4,7 @@
 struct Diagnostic{
     Real time;
     Real kineticEnergy;
+    Real fieldEnergy;
     Real totalEnergy;
     Real l2Norm;
     Real entropy;
@@ -17,4 +18,4 @@ class DiagnosticsCollector{
         void writeCsv(const std::string& filename,const std::vector<Diagnostic>& history) const;
     private:
         const PhaseGrid& g_;
-}
+};
