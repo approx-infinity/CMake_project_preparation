@@ -50,7 +50,7 @@ void PoissonSolver::dft(Field1D& re, Field1D& im, bool inverse)  const{
                 re[i+k+len/2] = uRe - vRe;
                 im[i+k+len/2] = uIm - vIm;
                 Real tmpRe = curRe*wRe - curIm*wIm;
-                curIm = curRe*wRe - curIm*wIm;
+                curIm = curRe*wIm - curIm*wRe;
                 curRe = tmpRe;
             } 
         }
