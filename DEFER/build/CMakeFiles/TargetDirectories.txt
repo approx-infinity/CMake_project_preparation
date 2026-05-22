@@ -1,2 +1,0 @@
-/home/sajid/CMake_tryin/DEFER/build/CMakeFiles/edit_cache.dir
-/home/sajid/CMake_tryin/DEFER/build/CMakeFiles/rebuild_cache.dir
