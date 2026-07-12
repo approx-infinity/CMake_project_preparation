@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.22 FATAL_ERROR)
+get_directory_property(hasParent PARENT_DIRECTORY)
+if(hasParent)
+    message(STATUS "This is a subdirectory CMakeLists.txt")
+else()
+    message(STATUS "This is a top-level CMakeLists.txt")
+endif()
