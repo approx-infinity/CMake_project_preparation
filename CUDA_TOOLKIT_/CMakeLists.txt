@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.10)
+project(MyProject LANGUAGES CUDA)
+find_package(CUDAToolkit REQUIRED)
+if(CUDAToolkit_FOUND)
+    message(STATUS "CUDA found! Enabling GPU acceleration.")
+else()
+    message(STATUS "No CUDA found. Building for CPU only.")
+endif()
